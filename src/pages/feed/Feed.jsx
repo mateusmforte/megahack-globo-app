@@ -3,6 +3,7 @@ import SearchBar from "../../components/searchBar/SearchBar";
 import UserAvatar from "../../components/userAvatar/UserAvatar";
 
 import "./Feed.scss";
+import Categories from "../../components/categories/Categories";
 
 class Feed extends Component {
   render() {
@@ -12,7 +13,9 @@ class Feed extends Component {
           <SearchBar />
           <UserAvatar userLogged={true} />
         </header>
-        <main></main>
+        <main>
+          <Categories />
+        </main>
       </div>
     );
   }
