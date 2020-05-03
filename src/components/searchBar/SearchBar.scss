@@ -3,6 +3,7 @@ $secondary-color: #cccccc;
 .searchBar {
   position: relative;
   input {
+    font-family: inherit;
     padding: 2%;
     width: 100%;
     height: inherit;
