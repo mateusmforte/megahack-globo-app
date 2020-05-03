@@ -1,8 +1,13 @@
 $primary-color: #ffffff;
 $secondary-color: #cccccc;
+$text-color: #999;
+$text-size: 1em;
+
 .searchBar {
   position: relative;
   input {
+    color: $text-color;
+    font-size: $text-size;
     font-family: inherit;
     padding: 2%;
     width: 100%;
