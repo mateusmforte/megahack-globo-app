@@ -30,21 +30,6 @@ const Categories = () => {
     },
   ];
 
-  // / tag="div"
-  // viewportTag="div"
-  // cameraTag="div"
-  // classPrefix="eg-flick"
-  // deceleration={0.0075}
-  // horizontal={true}
-  // panelEffect={(x) => 1 - Math.pow(1 - x, 3)}
-  // defaultIndex={0}
-  //  thresholdAngle={45}
-  // bounce={10}
-  // autoResize={true}
-  // adaptive={true}
-  // zIndex={2000}
-  // hanger={"0"}
-  // anchor={"0"}
   return (
     <Flicking
       className="categories"
@@ -65,9 +50,6 @@ const Categories = () => {
         </div>
       ))}
     </Flicking>
-    // <ul className="categories">
-    //
-    // </ul>
   );
 };
 
