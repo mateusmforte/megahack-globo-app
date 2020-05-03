@@ -1,0 +1,27 @@
+$primary-color: #ffffff;
+$secondary-color: #cccccc;
+.searchBar {
+  position: relative;
+  input {
+    padding: 2%;
+    width: 100%;
+    height: inherit;
+    background: $primary-color;
+    border: 2px solid $secondary-color;
+    border-radius: 6px;
+  }
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 10%;
+    height: inherit;
+    background-image: url(./utils/icons/busca-globo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    right: 1%;
+    transform: translate(32%, 32%);
+  }
+}
