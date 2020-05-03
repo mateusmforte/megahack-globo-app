@@ -4,38 +4,27 @@ import UserAvatar from "../../components/userAvatar/UserAvatar";
 
 import "./Feed.scss";
 import Categories from "../../components/categories/Categories";
-import NewsDrawer from "../../components/newsDrawer/NewsDrawer";
-import HomeNews from "../../components/newsDrawer/utils/components/HomeNews";
+import UserFeed from "./utils/UserFeed/UserFeed";
+import FreeUserFeed from "./utils/FreeUserFeed/FreeUserFeed";
 
 class Feed extends Component {
   constructor(props) {
     super();
     this.state = {
-      loggedUser: false,
+      loggedUser: true,
     };
   }
 
   render() {
-    const categories = [
-      { name: "início", content: <HomeNews /> },
-      { name: "g1", content: null },
-      { name: "ge", content: null },
-      { name: "gshow", content: null },
-      { name: "globoplay", content: null },
-    ];
     return (
       <div className="feed">
         <header className="feed__header">
           <SearchBar />
-          <UserAvatar userLogged={true} />
+          <UserAvatar userLogged={this.state.loggedUser} />
         </header>
         <main>
           <Categories />
-          {this.state.loggedUser ? (
-            <div></div>
-          ) : (
-            <NewsDrawer newsCategories={categories} />
-          )}
+          {this.state.loggedUser ? <UserFeed /> : <FreeUserFeed />}
         </main>
       </div>
     );
