@@ -1,9 +1,9 @@
 .categories {
-  height: 5%;
+  height: 6%;
   display: flex;
   overflow-x: auto;
   overflow-y: hidden;
-  padding-left: 5%;
+  margin: 0 5%;
 
   & .categorie {
     display: flex;

@@ -54,8 +54,12 @@ const Categories = () => {
       moveType={{ type: "snap" }}
       collectStatistics={false}
     >
-      {categories.map((categorie) => (
-        <div className="categorie" style={{ color: categorie.color }}>
+      {categories.map((categorie, index) => (
+        <div
+          key={index}
+          className="categorie"
+          style={{ color: categorie.color }}
+        >
           {categorie.icon && <img src={categorie.icon} alt="icone" />}
           {categorie.name}
         </div>
