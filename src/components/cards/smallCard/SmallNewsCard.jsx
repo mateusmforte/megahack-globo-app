@@ -1,6 +1,6 @@
 import React from "react";
-import "./SmallCard.scss";
-const SmallCard = (props) => {
+import "./SmallNewsCard.scss";
+const SmallNewsCard = (props) => {
   return (
     <div
       className="smallCard"
@@ -20,4 +20,4 @@ const SmallCard = (props) => {
   );
 };
 
-export default SmallCard;
+export default SmallNewsCard;

@@ -1,4 +1,7 @@
 .userFeed {
+  height: 95%;
+  width: 100%;
+  overflow: auto;
   &__highlightnews {
     padding-left: 5%;
   }
@@ -15,7 +18,6 @@
   }
   &__favsubjects {
     height: 160px;
-    width: 100%;
     padding-left: 5%;
 
     &__subject {
@@ -35,5 +37,8 @@
         background-color: rgba(0, 45, 98, 0.75);
       }
     }
+  }
+  .largeCard {
+    margin: 3% 0;
   }
 }
