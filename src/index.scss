@@ -1,0 +1,12 @@
+@import "reset.css";
+@import "./fonts/OpenSans.fontface.css";
+html {
+  font-family: "Open Sans";
+}
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  background-color: #e5e5e5;
+}

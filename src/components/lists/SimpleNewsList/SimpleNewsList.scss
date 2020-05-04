@@ -1,0 +1,21 @@
+.simpleList {
+  &__item {
+    &__content {
+      display: flex;
+      justify-content: space-around;
+      &__image {
+        width: 50%;
+        object-fit: cover;
+      }
+      & p {
+        width: 50%;
+        margin-bottom: 5%;
+        padding: 2%;
+      }
+    }
+    hr {
+      width: 100%;
+      color: #eee;
+    }
+  }
+}

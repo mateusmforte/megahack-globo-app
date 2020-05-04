@@ -1,0 +1,17 @@
+.feed {
+  height: 92%;
+  &__header {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1%;
+    .searchBar {
+      width: 74%;
+      height: 65%;
+    }
+  }
+  & main {
+    height: 89%;
+  }
+}

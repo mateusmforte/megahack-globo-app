@@ -1,0 +1,73 @@
+$primary-color: #ffffff;
+
+@mixin iconSetup($icon-url) {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  background-image: url($icon-url);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.navigation {
+  background-color: $primary-color;
+  border: 1px solid #dddddd;
+  height: 8%;
+  width: 100%;
+  display: flex;
+
+  position: fixed;
+  bottom: 0;
+  .active {
+    &::before {
+      content: "";
+      background-color: #0669de;
+      position: absolute;
+      height: 14%;
+      width: 60%;
+      transform: translate(35%, -100%);
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }
+  &__link {
+    display: flex;
+    &.feed {
+      transform: scale(1);
+      transform-style: preserve-3d;
+      @include iconSetup("./utils/icons/globo-icon.svg");
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        background-color: #fff;
+        transform: scaleX(1.2) scaleY(1.5) translateZ(-1px);
+        transform: scaleX(0.9) scaleY(1.6) translateZ(-1px);
+        border-top-left-radius: 26%;
+        border-top-right-radius: 26%;
+        border: 1px solid #ddd;
+      }
+      &.active {
+        &::after {
+          background-color: #0669de;
+          border-color: transparent;
+        }
+      }
+    }
+    &.g1 {
+      @include iconSetup("./utils/icons/g1-icon.svg");
+    }
+    &.ge {
+      @include iconSetup("./utils/icons/ge-icon.svg");
+    }
+
+    &.gshow {
+      @include iconSetup("./utils/icons/gshow-icon.svg");
+    }
+    &.globoplay {
+      @include iconSetup("./utils/icons/globoplay-icon.svg");
+    }
+  }
+}
