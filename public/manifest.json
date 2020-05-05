@@ -1,6 +1,6 @@
 {
-  "name": "Globo.com",
-  "short_name": "Globo.com",
+  "name": "Mundo Globo",
+  "short_name": "Mundo Globo",
   "icons": [
     {
       "src": "icons/favicon.ico",
@@ -40,6 +40,6 @@
   ],
   "start_url": ".",
   "display": "fullscreen",
-  "theme_color": "#0869DE",
-  "background_color": "#0869DE"
+  "theme_color": "#E5E5E5",
+  "background_color": "#E5E5E5"
 }
